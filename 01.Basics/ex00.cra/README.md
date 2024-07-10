@@ -1,3 +1,5 @@
+# ex00.cra: create-react-app 으로 React Application 만들어 보기
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
