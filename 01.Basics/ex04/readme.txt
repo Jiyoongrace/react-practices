@@ -14,6 +14,7 @@ $ npm init -y
 
 <2> Install Packages
 $ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader sass-loader node-sass
+* mac은 node-sass 오류 -> sass 로 사용하기
 
 
 <3> NPM scripting : package.json
@@ -36,9 +37,9 @@ public/index.html
 2. src/App.js
 
 
-<7> Test
-$ npm start
-
-
-<8> Build(Bundling)
+<7> Build(Bundling)
 $ npm run build
+
+
+<8> Test
+$ npm start
