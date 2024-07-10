@@ -10,12 +10,16 @@ module.exports = {
     },
     module: {
         rules:[{
+            test: /\.js/i,
+            exclude: /node_modules/,
+            use: 'babel-loader'
+        }, {
             test: /\.(c|sa|sc)ss$/i,
             use:['style-loader', 'css-loader', 'sass-loader']
         }, {
             test: /\.(png|gif|jp?eg|svg|ico|tif?f|bmp)/i,
             type: 'asset/resource'
-        }]               
+        }]
     },     
     devServer: {
         host: '0.0.0.0',
