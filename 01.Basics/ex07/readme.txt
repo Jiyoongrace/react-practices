@@ -1,4 +1,4 @@
-ex07: ex00.cra Recofiguration (DIY)
+ex07: ex00.cra Reconfiguration (DIY)
 
 create-react-app 사용하지 말고 '리액트 스타트앱' 직접 설정하고 구성하기  
 
@@ -7,14 +7,15 @@ create-react-app 사용하지 말고 '리액트 스타트앱' 직접 설정하�
 == [실습] ===============================================
 
 <1> Init Project
-$ mkdir ex05
-$ cd ex05
+$ mkdir ex07
+$ cd ex07 or cd ../ex07
 $ npm init -y 
 
 
 <2> Install Packages
 1. 개발툴
 $ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader sass-loader node-sass babel-loader @babel/core @babel/preset-env @babel/preset-react
+* mac은 node-sass 오류 -> sass 로 사용하기
 
 2. React 라이브러리
 $ npm i react react-dom
