@@ -43,5 +43,9 @@ public/index.html
 $ npm start
 
 
+--------------------------
+배포할 때 아니면 build는 안해도 된다.
+webpack server가 해준다.
+
 <8> Build(Bundling)
 $ npm run build
