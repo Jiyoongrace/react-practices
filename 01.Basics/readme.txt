@@ -1,4 +1,4 @@
-React Practice - 01.Basics
+React Practice - 01. Basics
 
 ex00.cra: create-react-app 으로 React Application 만들어 보기
 ex01: 전통적인 DOM 기반 기반의 Application
