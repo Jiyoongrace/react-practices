@@ -12,14 +12,22 @@ React Practice
 09. [참고] webpack-practices *
 10. [참고] babel-practices *
 
+tabbox
+   |-- backend
+   |-- frontend
+
+guestbook
+gallery
+
 emaillist *
    |-- backend
    |-- frontend
+
 
 kanbanboard *
    |-- backend
    |-- frontend
 
-mysite09(guestbook, gallery) *
+mysite08(guestbook, gallery) *
    |-- backend
    |-- frontend
