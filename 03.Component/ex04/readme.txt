@@ -14,7 +14,7 @@ ex04: State
 
 
 <2> 제어 컴포넌트(Form)
-1. input, textarea, select 등과 같은 폼(Form) 컴포넌트에서 사용자 입력에 따라 state 값이 변경되고 렌더링하는 컨포넌트
+1. input, textarea, select 등과 같은 폼(Form) 컴포넌트에서 사용자 입력에 따라 state 값이 변경되고 렌더링하는 컴포넌트
 2. 제어 컴포넌트
     1) "컴포넌트의 UI 변경은 외부에서 할 수 없다. 컴포넌트 내부의 상태 변경을 통한 반응형 렌더링으로만 가능하다." - 리액트 패₩턴을 준수할 수 있다.
     2) 사용자 입력 값을 제어: 제한(Constraints)과 다양한 Validation 이 가능.
