@@ -8,7 +8,7 @@ export default [
   },
   {
     "no": 2,
-    "title": "Stroy Board 작성",
+    "title": "Story Board 작성",
     "description": "기능 기반의 화면 목업 작업",
     "status": "Done",
     "tasks": [
@@ -55,7 +55,7 @@ export default [
     "tasks": [
       {
         "no": 4,
-        "name": "bootstarp 테마 찾기",
+        "name": "bootstrap 테마 찾기",
         "done": false
       },
       {
