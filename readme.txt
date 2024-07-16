@@ -6,7 +6,7 @@ React Practice
 04. 라우팅(Routing) *
 05. Flux: Redux
 06. Testing(Rest)
-07. Perforamance
+07. Performance
 08. 통합개발(Integration) *
     FE(React) + BE(Spring Boot, API Server)
 09. [참고] webpack-practices *
