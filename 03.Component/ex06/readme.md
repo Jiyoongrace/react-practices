@@ -51,7 +51,7 @@ const newObject = Object.assign({}, obj, {no: 20});
 3. src/03
 
 ### How IV:
-1. React Addon에 복잡하고 중첩된 객체의 변경을 도와주는 immutablity helper 함수를 사용하는 것이다.
+1. React Addon에 복잡하고 중첩된 객체의 변경을 도와주는 immutability helper 함수를 사용하는 것이다.
 2. add-on 설치
 ```bash
 $ npm i react-addons-update
