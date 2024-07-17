@@ -1,0 +1,7 @@
+import fs from 'fs';
+
+console.log("== Violation ===================================");
+let state = {
+    order: JSON.parse(fs.readFileSync('./json/data.json', 'utf-8'))
+};
+
