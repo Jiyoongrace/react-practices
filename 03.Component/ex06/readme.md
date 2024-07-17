@@ -28,13 +28,26 @@ emails.push({});
 ### How II:
 1. Object.assign 을 이용해 변경이 적용된 객체를 새로 생성하는 방법
 2. src/02
+```javascript
+const obj = {};
+const newObject = Object.assign({}, obj);
+
+const obj = {
+    no: 10,
+    name: 'jiyoon',
+    education: { // Nest Object
+        
+    } // 이 안을 다 복사하는 것은 깊은 copy, Object.assign은 얕은 copy로 깊은 copy X
+};
+const newObject = Object.assign({}, obj, {no: 20});
+```
 
 ### How III:
 1. II는 Nest Object 가 있는 경우 까다롭다.
    - Object.assign은 deep copy 지원 안함.
    - deep clone을 뜨는 방법은 비용이 비싸다.
    - 직접 하는 방법은 관리가 어렵고 코드에 실수가 있을 가능성 많음.
-2. 이는 자바스크립트가 원래 저 따위이기 때문에 어쩔 수 없다.
+2. 이는 자바스크립트가 원래 이렇기 때문에 어쩔 수 없다.
 3. src/03
 
 ### How IV:
