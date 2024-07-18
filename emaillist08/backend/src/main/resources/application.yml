@@ -26,6 +26,8 @@ spring:
     prefix: classpath:templates/
     suffix : .html
 
+mybatis:
+  config-location: classpath:mybatis/configuration.xml
 
 server:
   error:
@@ -56,6 +58,15 @@ spring:
   thymeleaf:
     cache: false
 
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://192.168.64.7:3306/webdb?charset=utf8
+    username: webdb
+    password: webdb
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 20
+
 server:
   port: 8080
 
@@ -78,6 +89,15 @@ spring:
   thymeleaf:
     cache: true
 
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://192.168.64.7:3306/webdb?charset=utf8
+    username: webdb
+    password: webdb
+    hikari:
+      minimum-idle: 10
+      maximum-pool-size: 20
+
 server:
   port: 8083
 
@@ -85,7 +105,7 @@ logging:
   pattern:
     file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n"
   logback:
-    rollingpolicy:
+    rolling policy:
       file-name-pattern: "logs/${spring.application.name}.%d{yyyy-MM-dd}.%i.log.zip"
       max-file-size: 10MB
       max-history: 10
