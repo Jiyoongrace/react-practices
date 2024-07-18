@@ -1,32 +1,31 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Main from "./component/Main";
 import Gallery from "./component/Gallery";
 import Guestbook from "./component/Guestbook";
 import Error404 from "./component/Error404";
 
 export default function App() {
-    const [route, setRoute] = useState({});
+    const [route, setRoute] = useState({page: window.location.href.substring(window.location.href.lastIndexOf("/"))});
 
-    const handleLinkClick = (e) => {
+    const handlerPopState = (e) => {
+        setRoute(e.state ? e.state : {page: "/"});
     }
 
-    const Router = function () {
-        let component = null;
+    const handleLinkClick = (e) => {
+        e.preventDefault();
 
-        switch (route.page) {
-            case '/':
-                component = <Main/>;
-                break;
-            case '/gallery':
-                component = <Gallery/>;
-                break;
-            case '/guestbook':
-                component = <Guestbook/>;
-                break;
+        const url = e.target.href.substring(e.target.href.lastIndexOf("/"));
+        window.history.pushState({page: url}, e.target.text, url);
+        setRoute({page: url});
+    }
+
+
+    useEffect(() => {
+        window.addEventListener("popstate", handlerPopState);
+        return () => {
+            window.removeEventListener("popstate", handlerPopState);
         }
-
-        return component;
-    };
+    });
 
     return (
         <div>
@@ -45,10 +44,11 @@ export default function App() {
                         case '/gallery':
                             return <Gallery />;
                         default :
-                            return <Error404 />;                    
+                            return <Error404 />;
                     }
                 })()
             }
+
         </div>
     )
 }
