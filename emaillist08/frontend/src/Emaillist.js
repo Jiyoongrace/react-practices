@@ -9,6 +9,7 @@ function Emaillist({emails}) {
             {
                 emails?.map(email => <Email
                                         key={email.no}
+                                        no={email.no}
                                         firstName={email.firstName}
                                         lastName={email.lastName}
                                         email={email.email} />)
