@@ -25,7 +25,7 @@ export default function App() {
         return () => {
             window.removeEventListener("popstate", handlerPopState);
         }
-    });
+    }, []);
 
     return (
         <div>
