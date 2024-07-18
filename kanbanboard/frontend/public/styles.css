@@ -22,7 +22,7 @@ body        { background: #eee; font-family: "맑은 고딕", 돋움, 굴림;  }
 .Card_Title_Open:before { content: '▾'; }
 
 
-/* TaskList */
+/* TaskList.js */
 .Task_List ul               { list-style-type: none; }
 .Task_List .Input_Add_Task  { border: 1px dashed #bbb; width: 100%; padding: 10px; margin-top: 5px; border-radius: 3px }
 

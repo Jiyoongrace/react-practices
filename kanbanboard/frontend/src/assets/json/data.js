@@ -32,7 +32,7 @@ export default [
     "tasks": [
       {
         "no": 1,
-        "name": "스터디 계획:책선정,목표과제선정",
+        "name": "스터디 계획:책선정, 목표과제선정",
         "done": true
       },
       {
