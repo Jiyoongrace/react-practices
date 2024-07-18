@@ -7,16 +7,16 @@ import Error404 from "./component/Error404";
 export default function App() {
     const [route, setRoute] = useState('');
 
-    const hadlerHashChage = () => {
+    const handlerHashChage = () => {
         console.log(window.location.hash);
         setRoute(window.location.hash.substring(1));
     }
 
     useEffect(() => {
-        window.addEventListener("hashchange", hadlerHashChage);
+        window.addEventListener("hashchange", handlerHashChage);
 
         return () => {
-            window.removeEventListener("hashchange", hadlerHashChage);
+            window.removeEventListener("hashchange", handlerHashChage);
         }
     }, []);
 
