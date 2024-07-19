@@ -1,4 +1,4 @@
-Landing Server Example
+배포 및 실행 - Landing Server Example
 
 
 1.  backend
