@@ -45,7 +45,7 @@ module.exports = function(env) {
             },
             proxy: [{
                 context: ['/api'],
-                target: 'http://localhost:8080'
+                target: 'http://localhost:8085'
             }]
         }    
     };
