@@ -47,20 +47,6 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-<!--		&lt;!&ndash; MyBatis Starter &ndash;&gt;-->
-<!--		<dependency>-->
-<!--			<groupId>org.mybatis.spring.boot</groupId>-->
-<!--			<artifactId>mybatis-spring-boot-starter</artifactId>-->
-<!--			<version>2.2.0</version>-->
-<!--		</dependency>-->
-
-<!--		&lt;!&ndash; Mariadb JDBC Driver &ndash;&gt;		-->
-<!--		<dependency>-->
-<!--		    <groupId>org.mariadb.jdbc</groupId>-->
-<!--		    <artifactId>mariadb-java-client</artifactId>-->
-<!--		</dependency>-->
-<!--		-->
-
 		<!-- Lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -110,7 +96,28 @@
                     <environmentVariables>
                     </environmentVariables>
                 </configuration>
-            </plugin>						
+            </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target</outputDirectory>
+							<resources>
+								<resource>
+									<directory>src/main/resources/script</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>		
 	</build>	
 </project>
