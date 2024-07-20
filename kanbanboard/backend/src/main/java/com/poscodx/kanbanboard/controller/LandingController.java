@@ -15,6 +15,6 @@ public class LandingController {
 	
 	@GetMapping("favicon.ico")
 	@ResponseBody
-	public void returnNoFavivon() {
+	public void returnNoFavicon() {
 	}
 }
