@@ -12,7 +12,6 @@ function CardList({title, cards}) {
                     no={card.no}
                     title={card.title}
                     description={card.description}
-                    tasks={card.tasks}
                 />
             ))}
         </div>

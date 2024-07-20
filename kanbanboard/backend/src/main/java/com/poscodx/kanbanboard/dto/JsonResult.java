@@ -7,9 +7,9 @@ import lombok.Setter;
 @Setter
 public class JsonResult {
 	private String result;	//"success" or "fail"
-	private Object data;	// if success, set! 
+	private Object data;	// if success, set!
 	private String message; // if fail, set!
-	
+
 	private JsonResult(Object data) {
 		this.result = "success";
 		this.data = data;
@@ -23,7 +23,7 @@ public class JsonResult {
 	public static JsonResult success(Object data) {
 		return new JsonResult(data);
 	}
-	
+
 	public static JsonResult fail(String message) {
 		return new JsonResult(message);
 	}

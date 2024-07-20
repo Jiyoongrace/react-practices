@@ -12,7 +12,7 @@
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
-._Card_Title {
+.Card_Title {
   font-weight: bold;
   border-bottom: solid 5px transparent;
 
@@ -23,11 +23,13 @@
   }
 }
 
-._Card_Title_Open:before {
+.Card_Title_Open:before {
+  display: inline-block;
+  width: 1em;
   content: '▾';
 }
 
-._Card_Details {
+.Card_Details {
   font-weight: normal;
   padding: 10px;
 }

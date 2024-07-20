@@ -46,7 +46,7 @@ public class TaskController {
 
     @PutMapping("/{no}")
     public ResponseEntity<JsonResult> update(
-            @PathVariable(value = "no", required = true) Long no, String done) {
+            @PathVariable(value = "no") Long no, String done) {
 
         log.info("Request[PUT / api/{}]: {}", no, done);
 
