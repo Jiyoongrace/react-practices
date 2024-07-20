@@ -10,11 +10,9 @@
         # -f tabbox/backend exec:exec clean package
 
         - 터미널
-        # java -Dspring.profiles.active=production -jar tabbox/backend/target/tabbox.jar 
+        # java -Dspring.profiles.active=production -jar /root/.jenkins/workspace/tabbox/tabbox/backend/target/tabbox.jar
 
 2. frontend
-
-
 
 
 <3> deploy
@@ -24,7 +22,7 @@
 
 1)  key 생성하기
 
-# ssh-keygen -t rsa -b 2048 -m PEM -C "giyun36320@gmail.com"
+    # ssh-keygen -t rsa -b 2048 -m PEM -C "giyun36320@gmail.com"
 
 2)  key 생성 확인
 
@@ -32,18 +30,19 @@
     - public key(공개키): ~/.ssh/id_rsa.pub
 
 3)  공개키를 서버에 설치하기
-    # mv ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys         
+    # mv ~/.ssh/id_rsa.pub ~/.ssh/authorized_keys
 
 4)  private key 보관
 
     id_rsa 파일의 내용을 mykey.pem 파일로 로컬에 잘 보관할 것
+    cat id_rsa
 
     rm -rf id_rsa
     echo $PATH
     vi environment
     PATH=/root/.local/bin:/root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/poscodx/git/bin:/usr/local/poscodx/java/bin:/usr/local/poscodx/maven/bin:/usr/local/poscodx/mariadb/bin
 
-5)  sshd 설정 확인(/etc/sshd/sshd_config)
+5)  sshd 설정 확인(/etc/ssh/sshd_config)
 
     /PermitRoot 치고 Enter(검색)
 	PermitRootLogin yes
