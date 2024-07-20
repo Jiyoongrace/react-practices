@@ -1,14 +1,15 @@
 import React from 'react';
 import {_Email} from './assets/scss/Email.scss';
 
-function Email({no, firstName, lastName, email}) {
+function Email({no, firstName, lastName, email, deleteEmail}) {
     return (
         <li className={_Email}>
             <h4>{firstName}{lastName}</h4>
             <span>{email}</span>
-            <a href='' onClick={(e) => {
+            <a href='#' onClick={(e) => {
                 e.preventDefault();
-                console.log('delete: ' + no); // filter 쓰면.. 됨..
+                deleteEmail(no);
+                console.log('delete: ' + no);
             }} />
         </li>
     );

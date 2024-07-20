@@ -38,4 +38,16 @@ public class ApiController {
                 .status(HttpStatus.OK)
                 .body(JsonResult.success(vo));
     }
+
+    @DeleteMapping("/api/{no}")
+    public ResponseEntity<JsonResult> delete(@PathVariable(value = "no", required = true) Long no) {
+
+        log.info("Request[DELETE / api/{}]: ", no);
+
+        emaillistRepository.delete(no);
+
+        return ResponseEntity
+                .status(HttpStatus.OK)
+                .body(JsonResult.success(no));
+    }
 }
