@@ -5,8 +5,11 @@
     1)  테스트(개발 모드)
         인텔리제이 스프링부트 애플리케이션 실행
 
-    2)  빌드(서버 배포) 테스트 하기 
-        # mvn -f tabbox/backend exec:exec clean package
+    2)  빌드(서버 배포) 테스트 하기
+        - [jenkins] Invoke top-level Maven targets
+        # -f tabbox/backend exec:exec clean package
+
+        - 터미널
         # java -Dspring.profiles.active=production -jar tabbox/backend/target/tabbox.jar 
 
 2. frontend
