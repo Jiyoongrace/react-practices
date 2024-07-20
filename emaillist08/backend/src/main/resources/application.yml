@@ -68,7 +68,7 @@ spring:
       maximum-pool-size: 20
 
 server:
-  port: 8080
+  port: 8088
 
 logging:
   pattern:
