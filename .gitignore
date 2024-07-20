@@ -48,3 +48,6 @@ build/
 
 **/node_modules
 node-practices.iml
+
+.pem
+mykey.pem
